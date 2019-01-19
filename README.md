@@ -1,11 +1,9 @@
 # organizrv2-titanembeds
 Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
 
-First make a user defined css slot on https://titanembeds.com and make note of the ID.
-
-<h2>Auto Plex Username as Guest Username on Titan Bot</h2>
-
-Add this code to your Custom HTML Homepage Item in Organizer and make sure the minimum authentication matches that of the authentication of your Discord TAB.
+<ul>
+  <li>First make a user defined css slot on https://titanembeds.com and paste the above css code into the field.  Make note of the ID as you will need to call it in the URL to the Titan Embed later.<li>
+<li>Add this code to your Custom HTML Homepage Item in Organizer and make sure the minimum authentication matches that of the authentication of your Discord TAB.
 
 ```
 <script>
@@ -18,4 +16,5 @@ $("#container-Discord").attr("data-url",discordURL);
 ```
 
 Change the Discord URL's SERVERID and CSSID accordingly.
-"#menu-Discord" and "#container-Discord" need to change according to what you name your tab.  Mine is "Discord". 
+"#menu-Discord" and "#container-Discord" need to change according to what you name your tab in Org.  Mine is "Discord". When making the Tab in Org you can specify any url as the script above will be changing the url anyways.</li>
+</ul>
