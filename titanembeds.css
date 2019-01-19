@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+	font-family: Open Sans Semibold,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+body {
+	background-image: url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-noise.png"), url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-light.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	min-height: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, .0);
+}
+
+/* Remove login modal pop up. Displays briefly for a second when "username" query is used in URL and it is an eye sore */
+#loginmodal {
+	display: none !important;
+	opacity: 0;
+}
+
+/* Remove black to transparant gradient at top of chat window */
+nav {
+	background-color: none !important;
+	background: none !important;
+}
+
+#guild-nav {
+	background-image: url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-noise.png"), url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-light.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	min-height: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, .0);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+	width: 250px !important;
+}
+
+#members-nav {
+	background-image: url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-noise.png"), url("https://archmonger.github.io/Blackberry-Flat/Resources/blur-light.png");
+	background-repeat: repeat, no-repeat;
+	background-attachment: fixed, fixed;
+	background-position: center center, center center;
+	background-size: auto, cover;
+	-webkit-background-size: auto, cover;
+	-moz-background-size: auto, cover;
+	-o-background-size: auto, cover;
+	min-height: 100%;
+	height: auto;
+	background-color: rgba(0, 0, 0, .0);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+	width: 320px !important;
+}
+
+.side-nav .subheader {
+	font-variant: none !important;
+	text-transform: uppercase !important;
+	font-weight: bold;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/* Remove everything from side-nav except for channels */
+.side-nav > li:nth-child(1),
+.side-nav > li:nth-child(2),
+.side-nav > li:nth-child(3),
+.side-nav > li:nth-child(4),
+.side-nav > li:nth-child(5),
+.side-nav > li:nth-child(6),
+.side-nav > li:nth-child(7),
+.side-nav > li:nth-child(8),
+.side-nav > li:nth-child(9),
+#channeltopic {
+	display: none !important;
+}
+
+/* Side-nav active channel */
+.side-nav .active {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+@media (min-width: 992px) {
+	body.fixed-sidenav #overall-main-content, body.fixed-sidenav #overall-main-content nav, body.fixed-sidenav #overall-main-content footer {
+		margin-left: auto;
+		width: calc(100% - 250px) !important;
+	}
+}
+
+.chatcontent {
+	padding-left: 35px !important;
+}
+
+.chatmessage {
+	padding-left: 45px !important;
+	font-size: 14px !important;
+	font-weight: 300 !important;
+}
+
+.chattimestamp {
+	color: #9FA3A5 !important;
+}
+
+/* Remove an annoying popup */
+.dblballoon {
+	display: none !important;
+}
+
+/* Remove Titan logo */
+.brand-logo {
+	display: none !important;
+}
+
+/* Prevent user from changing settings */
+.currentuserchip {
+	pointer-events: none !important;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.footer {
+	background-color: rgba(67, 79, 90, .98) !important;
+}
+
+.footercontainer {
+	border: none !important;
+	margin-top: 0px !important;
+	padding-top: 12px !important;
+}
+
+.currentuserchip {
+	top: -10px !important;
+}
+
+::placeholder {
+	color: #999999 !important;
+}
+
+.modal {
+	background-color: #333333 !important;
+	border-radius: 5px;
+}
+#modal_guildinfobox {
+	background-color: #333333 !important;
+}
