@@ -45,7 +45,5 @@ function tabActions(event, name, type) {
     }
 }
 ```
-
-Change the Discord URL's SERVERID and CSSID accordingly.
-"#menu-Discord" and "#container-Discord" need to change according to what you name your tab in Org.  Mine is "Discord". When making the Tab in Org you can specify any url as the script above will be changing the url anyways.</li>
+</li>
 </ul>
