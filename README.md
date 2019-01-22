@@ -2,7 +2,7 @@
 Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
 
 <ul>
-  <li>First make a user defined css slot on https://titanembeds.com and paste the above css code into the field.  Make note of the ID as you will need to call it in the URL to the Titan Embed later.</li>
+  <li>First make a user defined css slot on https://titanembeds.com and paste the above css code into the field.  Make note of the ID on Titan as you will need to call it in the URL to the Titan Embed later.</li>
   <li>Make sure your settings on Titan site are as is:<br>
     "Unauthenticated (Guest) Users" - ENABLED (REQUIRED)<br>
     "Toggle Visitor Mode" - DISABLED (OPTIONAL)<br>
