@@ -20,13 +20,13 @@ function tabActions(event, name, type) {
     // with specified URL queries.
     //
 
-    // Modify these variables only
+    // Modify these variables only (leave values blank ("") if you do not want to use)
     var orgTabName = "Discord"; 			// Name of Organizr tab for Discord
     var titanServer = "470309961864577025";		// Discord Server ID
     var titanCSS = "420";				// Titan CSS ID
     var titanDefaultChannel = "";			// Default Discord Channel ID to be opened
-    var titanFixedSideNav = "true";			// Displays side navigation of channels
-    var titanNoScroll = "false";			// Prevents the embed from scrolling down on first load
+    var titanFixedSideNav = "true";			// Displays side navigation of channels (blank defaults to false)
+    var titanNoScroll = "false";			// Prevents the embed from scrolling down on first load (blank defaults to false)
 
     // Don't change any this
     if (name === 'Discord') {
