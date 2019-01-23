@@ -15,10 +15,10 @@ Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
 ```
 // Modify these variables only
 var titanServer = "123456789";        // Discord Server ID
-var titanCSS = "100";                // Titan CSS ID
-var titanDefaultChannel = "";            // Default Discord Channel ID to be opened
-var titanFixedSideNav = "true";            // Displays side navigation of channels
-var titanNoScroll = "false";            // Prevents the embed from scrolling down on first load
+var titanCSS = "100";                 // Titan CSS ID
+var titanDefaultChannel = "";         // Default Discord Channel ID to be opened
+var titanFixedSideNav = "true";       // Displays side navigation of channels
+var titanNoScroll = "false";          // Prevents the embed from scrolling down on first load
 
 // Don't change any this
 var userMenuElement = $("li[data-url^='https://titanembeds.com']");
