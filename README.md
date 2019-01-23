@@ -3,6 +3,7 @@ Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
 
 <ul>
   <li>Make sure your on the most up to date dev version of Org v2 for this to work as there has been some recent bug fixes with how Custom Javascript is loaded.  You will get this error if you are not:
+    
 ```
 cannot read property 'split' of undefined
 ```
