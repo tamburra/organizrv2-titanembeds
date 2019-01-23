@@ -88,7 +88,6 @@ nav {
 	display: none !important;
 }
 
-/* Side-nav active channel */
 .side-nav .active {
 	background-color: rgba(0, 0, 0, 0.3) !important;
 }
@@ -110,6 +109,10 @@ nav {
 	font-weight: 300 !important;
 }
 
+.embeds {
+	padding-left: 45px !important;
+}
+
 .chattimestamp {
 	color: #9FA3A5 !important;
 }
@@ -118,13 +121,10 @@ nav {
 .dblballoon {
 	display: none !important;
 }
-
-/* Remove Titan logo */
 .brand-logo {
 	display: none !important;
 }
 
-/* Prevent user from changing settings */
 .currentuserchip {
 	pointer-events: none !important;
 	-webkit-touch-callout: none; /* iOS Safari */
