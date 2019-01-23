@@ -10,7 +10,7 @@ Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
     "Chat Links" - ENABLED (OPTIONAL)<br>
     "Render Links as an Embed" - ENABLED (OPTIONAL)<br>
     "Toggle File Attachments" - ENABLED (OPTIONAL)</li>
-<li>Add this code to your Custom Javascript in Organizr (Settings --> Customize --> Appearance --> Custom Javascript) and change the variabled under the "// Modify these variables only" section ONLY.
+<li>Add this code to your Custom Javascript in Organizr (Settings --> Customize --> Appearance --> Custom Javascript) and change the variables under the "// Modify these variables only" section ONLY.
 
 ```
 // Modify these variables only
@@ -35,4 +35,8 @@ $("#menu-" + orgTabName).attr("data-url",discordURL);
 $("#container-" + orgTabName).attr("data-url",discordURL);
 ```
 </li>
+<li>Create a new tab in Ogranzir with tab url: "https://titanembeds.com/embed/YOUR-SERVER-ID-GOES-HERE".<br>
+Change "YOUR-SERVER-ID-GOES-HERE" with your discord server id.
+</li>
+<li>PROFIT</li>
 </ul>
