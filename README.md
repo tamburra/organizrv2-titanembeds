@@ -13,37 +13,26 @@ Embeds Titan chat and forces Org username as Bot guest username w/ Plex Theme
 <li>Add this code to your Custom Javascript in Organizr (Settings --> Customize --> Appearance --> Custom Javascript) and change the variabled under the "// Modify these variables only" section ONLY.
 
 ```
-// Override function tabActions()
-function tabActions(event, name, type) {
-    //
-    // Intercepts links to Discord tab in Organizr and redirects to TitanEmbed URL
-    // with specified URL queries.
-    //
+// Modify these variables only
+var titanServer = "123456789";        // Discord Server ID
+var titanCSS = "100";                // Titan CSS ID
+var titanDefaultChannel = "";            // Default Discord Channel ID to be opened
+var titanFixedSideNav = "true";            // Displays side navigation of channels
+var titanNoScroll = "false";            // Prevents the embed from scrolling down on first load
 
-    // Modify these variables only (leave values blank ("") if you do not want to use)
-    var orgTabName = "Discord"; 			// Name of Organizr tab for Discord
-    var titanServer = "470309961864577025";		// Discord Server ID
-    var titanCSS = "420";				// Titan CSS ID
-    var titanDefaultChannel = "";			// Default Discord Channel ID to be opened
-    var titanFixedSideNav = "true";			// Displays side navigation of channels (blank defaults to false)
-    var titanNoScroll = "false";			// Prevents the embed from scrolling down on first load (blank defaults to false)
-
-    // Don't change any this
-    if (name === 'Discord') {
-        var plexUsername = activeInfo.user.username;
-        var discordUsername = plexUsername.replace(/@[^@]+$/, '').replace(/\./g,"_").replace(/ /g,"%20").replace(/[^\w\s]/gi, '');
-        var discordURL = "https://titanembeds.com/embed/" + titanServer + 
-            "?css=" + titanCSS + 
-            "&defaultchannel=" + titanDefaultChannel + 
-            "&fixedsidenav=" + titanFixedSideNav + 
-            "&noscroll=" + titanNoScroll + 
-            "&username=" + discordUsername;
-        var orgDiscordTabName = orgTabName.replace(/\s+/g, '-');
-        $("#menu-" + orgDiscordTabName).attr("data-url",discordURL);
-        $("#container-" + orgDiscordTabName).attr("data-url",discordURL);
-        document.getElementById("frame-" + orgDiscordTabName).src = discordURL;
-    }
-}
+// Don't change any this
+var userMenuElement = $("li[data-url^='https://titanembeds.com']");
+var orgTabName = userMenuElement.attr('id').split('-')[1];
+var plexUsername = activeInfo.user.username;
+var discordUsername = plexUsername.replace(/@[^@]+$/, '').replace(/\./g,"_").replace(/ /g,"%20").replace(/[^\w\s]/gi, '');
+var discordURL = "https://titanembeds.com/embed/" + titanServer + 
+                 "?css=" + titanCSS + 
+                 "&defaultchannel=" + titanDefaultChannel + 
+                 "&fixedsidenav=" + titanFixedSideNav + 
+                 "&noscroll=" + titanNoScroll + 
+                 "&username=" + discordUsername;
+$("#menu-" + orgTabName).attr("data-url",discordURL);
+$("#container-" + orgTabName).attr("data-url",discordURL);
 ```
 </li>
 </ul>
