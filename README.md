@@ -41,7 +41,7 @@ $("#menu-" + orgTabName).attr("data-url",discordURL);
 $("#container-" + orgTabName).attr("data-url",discordURL);
 ```
 </li>
-<li>Create a new tab in Ogranzir with tab url: "https://titanembeds.com/embed/[DISCORD-SERVER-ID/[CSS-ID]".<br>
+<li>Create a new tab in Organizr with tab url: "https://titanembeds.com/embed/[DISCORD-SERVER-ID/[CSS-ID]".<br>
 Change [DISCORD-SERVER-ID] with your discord server id and [CSS-ID] to your Titan css id.  This is helpful when some decides to refresh the tab.
 </li>
 <li>PROFIT</li>
