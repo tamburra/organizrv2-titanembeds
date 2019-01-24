@@ -126,6 +126,7 @@ nav {
 }
 
 .currentuserchip {
+	top: -10px !important;
 	pointer-events: none !important;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -143,10 +144,6 @@ nav {
 	border: none !important;
 	margin-top: 0px !important;
 	padding-top: 12px !important;
-}
-
-.currentuserchip {
-	top: -10px !important;
 }
 
 ::placeholder {
